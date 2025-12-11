@@ -1,4 +1,5 @@
 Validador de Notas Escolares — v1.0
+
 Um aplicativo de console em Java para calcular a média final de um aluno em uma matéria específica, gerando um relatório simples com os dados informados.
 
 ✨ Funcionalidades
