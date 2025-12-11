@@ -77,6 +77,7 @@ Ok, agora que coletamos alguns dados seus, vamos para o próximo passo...
 Digite o nome da matéria que gostaria de saber sua média final: Estruturas de Dados
 
 Digite a nota da prova 1: 8.0
+
 Digite a nota da prova 2: 7.0
 
 Saída esperada:
@@ -102,19 +103,21 @@ O cálculo é média aritmética simples. Caso sua instituição use pesos difer
 🔧 Possíveis melhorias
 
 ✅ Validação de entrada (tratar números inválidos, faixas de 0 a 10).
+
 ✅ Suporte a mais avaliações e pesos (prova, trabalho, participação).
+
 ✅ Geração de arquivo de relatório (TXT/PDF).
+
 ✅ Mensagens baseadas no resultado (Aprovado / Recuperação / Reprovado).
+
 ✅ Internacionalização (i18n) para outros idiomas.
+
 ✅ Testes automatizados com JUnit.
 
 
 🧑‍💻 Autor
 
-Manserv - Cleiton Leite Junior
-Conta Terceiro — Manserv
-Gestora: Roberta Abreu Pestana Guidio Perez Rodrigues
-
+Cleiton Leite Junior
 
 🤝 Contribuindo
 Contribuições são bem-vindas!
