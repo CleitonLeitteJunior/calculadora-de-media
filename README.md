@@ -1,105 +1,122 @@
-Validador de Notas Escolares – Java
+Validador de Notas Escolares — v1.0
+Um aplicativo de console em Java para calcular a média final de um aluno em uma matéria específica, gerando um relatório simples com os dados informados.
 
-Um sistema simples em Java para calcular a média final de um aluno com base em duas notas informadas.
-O programa também coleta informações do estudante e gera um relatório formatado no terminal.
+✨ Funcionalidades
 
-🧰 Tecnologias Utilizadas
-
-Java 17+
-
-Scanner (java.util.Scanner) para entrada de dados via terminal
-
-Programação estruturada
-
-🎯 Objetivo do Projeto
-
-Este programa foi criado com foco em aprendizado, oferecendo:
-
-Prática com entrada de dados no Java
-
-Manipulação de variáveis de tipos String e Double
-
-Cálculo simples de média
-
-Geração de relatório formatado no console
-
-Organização e publicação de projetos no GitHub
-
-🚀 Como Executar
-1️⃣ Clone o repositório
-git clone https://github.com/CleitonLeitteJunior/calculadora-de-media.git
-
-2️⃣ Abra a pasta do projeto
-cd calculadora-de-media
-
-3️⃣ Compile o programa
-javac src/App.java
-
-4️⃣ Execute
-java src.App
-
-📄 Funcionamento do Programa
-
-O sistema solicita ao usuário:
-
-Nome completo
-
-Idade
-
-Instituição de ensino
-
-Curso
-
-Período
-
-Turno
-
-Matéria
-
-Nota da prova 1
-
-Nota da prova 2
-
-Após isso, calcula:
-
-média = (nota1 + nota2) / 2
+Coleta dados do aluno (nome, idade, instituição, curso, período e turno).
+Solicita o nome da matéria e as duas notas (Prova 1 e Prova 2).
+Calcula a média aritmética simples: (nota1 + nota2) / 2.
+Exibe um relatório final com todas as informações.
 
 
-E imprime um relatório formatado como:
+🧩 Tecnologias
 
+Linguagem: Java (versão 8 ou superior)
+Biblioteca utilizada: java.util.Scanner para entrada de dados via console.
+
+
+📁 Estrutura do Projeto
+.
+├── src
+│   └── App.java
+└── README.md
+
+
+Observação: Caso utilize um repositório simples, você pode manter apenas o arquivo App.java na raiz.
+
+
+🚀 Como executar
+Pré-requisitos
+
+Java JDK 8+ instalado
+Terminal/CMD/PowerShell
+
+Passo a passo
+
+
+Clone o repositório (ou copie o arquivo App.java):
+Shellgit clone https://github.com/seu-usuario/validador-notas-java.gitcd validador-notas-javaMostrar mais linhas
+
+
+Compile o código:
+Shelljavac App.javaMostrar mais linhas
+
+
+Execute o programa:
+Shelljava AppMostrar mais linhas
+
+
+
+🖥️ Exemplo de uso
+Entrada (via console):
+=================================================
+      VALIDADOR DE NOTAS ESCOLARES - v1.0
+=================================================
+
+Aqui você poderá calcular sua média final.
+Abaixo, digite seus dados para gerar o relatório.
+
+Digite seu nome: Maria da Silva
+Digite sua idade: 19
+Digite o nome da instituição de ensino, seja escola ou faculdade: Faculdade XPTO
+Digite o nome do curso que faz: Engenharia de Software
+Digite o período do curso que está: 3º
+Digite o turno que estuda, manhã, tarde ou noite: noite
+
+Ok, agora que coletamos alguns dados seus, vamos para o próximo passo...
+Digite o nome da matéria que gostaria de saber sua média final: Estruturas de Dados
+
+Digite a nota da prova 1: 8.0
+Digite a nota da prova 2: 7.0
+
+Saída esperada:
 ---------------- RELATÓRIO FINAL ----------------
-Aluno: João da Silva
-Idade: 20
-Instituição: Universidade XPTO
-Curso: Análise e Desenvolvimento de Sistemas
-Período: 2º
-Turno: Noite
-Matéria: Programação Orientada a Objetos
-Média final: 8.5
+Aluno: Maria da Silva
+Idade: 19
+Instituição: Faculdade XPTO
+Curso: Engenharia de Software
+Período: 3º
+Turno: noite
+Matéria: Estruturas de Dados
+Média final: 7.5
 ------------------------------------------------
 
-📌 Código-Fonte (App.java)
 
-O código completo está disponível em src/App.java.
-Este é um programa simples, ideal para estudantes praticarem entrada de dados, variáveis e lógica básica.
+📌 Observações e boas práticas
 
-📦 Melhorias Futuras (Roadmap)
+O programa utiliza Double para as notas (permite casas decimais).
+Validação de entrada não foi implementada (ex.: impedir letras onde se espera números). Isso pode ser adicionado como melhoria.
+O cálculo é média aritmética simples. Caso sua instituição use pesos diferentes, você pode adaptar a fórmula.
 
- Calcular média com mais provas
 
- Adicionar validação para aceitar apenas números
+🔧 Possíveis melhorias
 
- Permitir múltiplas matérias no mesmo relatório
+✅ Validação de entrada (tratar números inválidos, faixas de 0 a 10).
+✅ Suporte a mais avaliações e pesos (prova, trabalho, participação).
+✅ Geração de arquivo de relatório (TXT/PDF).
+✅ Mensagens baseadas no resultado (Aprovado / Recuperação / Reprovado).
+✅ Internacionalização (i18n) para outros idiomas.
+✅ Testes automatizados com JUnit.
 
- Exportar relatório para arquivo .txt
 
- Criar interface gráfica (Swing ou JavaFX)
+🧑‍💻 Autor
 
-🤝 Contribuições
+Manserv - Cleiton Leite Junior
+Conta Terceiro — Manserv
+Gestora: Roberta Abreu Pestana Guidio Perez Rodrigues
 
-Sinta-se à vontade para contribuir com melhorias, abrir issues ou sugerir novas funcionalidades.
 
-📜 Licença
+🤝 Contribuindo
+Contribuições são bem-vindas!
+Para contribuir:
 
-Este projeto está sob licença MIT.
-Você pode usar, modificar e distribuir à vontade.
+Faça um fork do projeto.
+Crie uma branch: git checkout -b feature/minha-feature.
+Faça o commit das mudanças: git commit -m "feat: adiciona minha feature".
+Faça o push: git push origin feature/minha-feature.
+Abra um Pull Request.
+
+
+📄 Licença
+Este projeto pode ser utilizado livremente para fins educacionais.
+Se desejar, adicione uma licença formal (ex.: MIT, Apache 2.0) neste repositório.
