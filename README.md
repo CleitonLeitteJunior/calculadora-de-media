@@ -5,14 +5,18 @@ Um aplicativo de console em Java para calcular a média final de um aluno em uma
 ✨ Funcionalidades
 
 Coleta dados do aluno (nome, idade, instituição, curso, período e turno).
+
 Solicita o nome da matéria e as duas notas (Prova 1 e Prova 2).
+
 Calcula a média aritmética simples: (nota1 + nota2) / 2.
+
 Exibe um relatório final com todas as informações.
 
 
 🧩 Tecnologias
 
 Linguagem: Java (versão 8 ou superior)
+
 Biblioteca utilizada: java.util.Scanner para entrada de dados via console.
 
 
@@ -58,10 +62,15 @@ Aqui você poderá calcular sua média final.
 Abaixo, digite seus dados para gerar o relatório.
 
 Digite seu nome: Maria da Silva
+
 Digite sua idade: 19
+
 Digite o nome da instituição de ensino, seja escola ou faculdade: Faculdade XPTO
+
 Digite o nome do curso que faz: Engenharia de Software
+
 Digite o período do curso que está: 3º
+
 Digite o turno que estuda, manhã, tarde ou noite: noite
 
 Ok, agora que coletamos alguns dados seus, vamos para o próximo passo...
