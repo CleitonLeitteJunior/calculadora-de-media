@@ -1,86 +1,112 @@
-Validador de Notas Escolares — v1.0
+# 🎓 Validador de Notas Escolares — v1.0
 
-Um aplicativo de console em Java para calcular a média final de um aluno em uma matéria específica, gerando um relatório simples com os dados informados.
+Aplicativo de console em **Java** para calcular a média final de um aluno em uma matéria específica, gerando um **relatório simples** com base nos dados informados via terminal.
 
-✨ Funcionalidades
+---
 
-Coleta dados do aluno (nome, idade, instituição, curso, período e turno).
+## ✨ Funcionalidades
 
-Solicita o nome da matéria e as duas notas (Prova 1 e Prova 2).
+* Coleta dados do aluno:
 
-Calcula a média aritmética simples: (nota1 + nota2) / 2.
+  * Nome
+  * Idade
+  * Instituição
+  * Curso
+  * Período
+  * Turno
+* Solicita:
 
-Exibe um relatório final com todas as informações.
+  * Nome da matéria
+  * Nota da Prova 1
+  * Nota da Prova 2
+* Calcula a **média aritmética simples**:
 
+```
+(nota1 + nota2) / 2
+```
 
-🧩 Tecnologias
+* Exibe um **relatório final completo** no console.
 
-Linguagem: Java (versão 8 ou superior)
+---
 
-Biblioteca utilizada: java.util.Scanner para entrada de dados via console.
+## 🧩 Tecnologias Utilizadas
 
+* **Linguagem:** Java (JDK 8 ou superior)
+* **Biblioteca:** `java.util.Scanner` (entrada de dados via console)
 
-📁 Estrutura do Projeto
+---
+
+## 📁 Estrutura do Projeto
+
+```
 .
 ├── src
 │   └── App.java
 └── README.md
+```
 
+📌 **Observação:** Em projetos simples, o arquivo `App.java` pode ficar diretamente na raiz do projeto.
 
-Observação: Caso utilize um repositório simples, você pode manter apenas o arquivo App.java na raiz.
+---
 
+## 🚀 Como Executar
 
-🚀 Como executar
-Pré-requisitos
+### ✅ Pré-requisitos
 
-Java JDK 8+ instalado
-Terminal/CMD/PowerShell
+* Java JDK 8 ou superior instalado
+* Terminal / CMD / PowerShell
 
-Passo a passo
+### ▶️ Passo a passo
 
+1. Clone o repositório (ou copie o arquivo `App.java`):
 
-Clone o repositório (ou copie o arquivo App.java):
-Shellgit clone https://github.com/seu-usuario/validador-notas-java.gitcd validador-notas-javaMostrar mais linhas
+```bash
+git clone https://github.com/seu-usuario/validador-notas-java.git
+cd validador-notas-java
+```
 
+2. Compile o código:
 
-Compile o código:
-Shelljavac App.javaMostrar mais linhas
+```bash
+javac App.java
+```
 
+3. Execute o programa:
 
-Execute o programa:
-Shelljava AppMostrar mais linhas
+```bash
+java App
+```
 
+---
 
+## 🖥️ Exemplo de Uso
 
-🖥️ Exemplo de uso
-Entrada (via console):
-=================================================
-      VALIDADOR DE NOTAS ESCOLARES - v1.0
+### 📥 Entrada (via console)
+
+```
+VALIDADOR DE NOTAS ESCOLARES - v1.0
 =================================================
 
 Aqui você poderá calcular sua média final.
 Abaixo, digite seus dados para gerar o relatório.
 
 Digite seu nome: Maria da Silva
-
 Digite sua idade: 19
-
 Digite o nome da instituição de ensino, seja escola ou faculdade: Faculdade XPTO
-
 Digite o nome do curso que faz: Engenharia de Software
-
 Digite o período do curso que está: 3º
-
 Digite o turno que estuda, manhã, tarde ou noite: noite
 
 Ok, agora que coletamos alguns dados seus, vamos para o próximo passo...
+
 Digite o nome da matéria que gostaria de saber sua média final: Estruturas de Dados
-
 Digite a nota da prova 1: 8.0
-
 Digite a nota da prova 2: 7.0
+```
 
-Saída esperada:
+### 📤 Saída Esperada
+
+```
 ---------------- RELATÓRIO FINAL ----------------
 Aluno: Maria da Silva
 Idade: 19
@@ -90,46 +116,69 @@ Período: 3º
 Turno: noite
 Matéria: Estruturas de Dados
 Média final: 7.5
-------------------------------------------------
+```
 
+---
 
-📌 Observações e boas práticas
+## 📌 Observações e Boas Práticas
 
-O programa utiliza Double para as notas (permite casas decimais).
-Validação de entrada não foi implementada (ex.: impedir letras onde se espera números). Isso pode ser adicionado como melhoria.
-O cálculo é média aritmética simples. Caso sua instituição use pesos diferentes, você pode adaptar a fórmula.
+* As notas utilizam o tipo `Double`, permitindo casas decimais.
+* **Não há validação de entrada** (ex.: letras onde se espera números).
+* O cálculo utiliza **média aritmética simples**.
+* Caso a instituição utilize pesos diferentes, a fórmula pode ser adaptada.
 
+---
 
-🔧 Possíveis melhorias
+## 🔧 Possíveis Melhorias
 
-✅ Validação de entrada (tratar números inválidos, faixas de 0 a 10).
+* ✅ Validação de entrada (valores numéricos e intervalo de 0 a 10)
+* ✅ Suporte a mais avaliações e pesos
+* ✅ Geração de relatório em arquivo (TXT ou PDF)
+* ✅ Resultado automático:
 
-✅ Suporte a mais avaliações e pesos (prova, trabalho, participação).
+  * Aprovado
+  * Recuperação
+  * Reprovado
+* ✅ Internacionalização (i18n)
+* ✅ Testes automatizados com JUnit
 
-✅ Geração de arquivo de relatório (TXT/PDF).
+---
 
-✅ Mensagens baseadas no resultado (Aprovado / Recuperação / Reprovado).
+## 🧑‍💻 Autor
 
-✅ Internacionalização (i18n) para outros idiomas.
+**Cleiton Leite Junior**
 
-✅ Testes automatizados com JUnit.
+---
 
+## 🤝 Contribuindo
 
-🧑‍💻 Autor
+Contribuições são bem-vindas! 🚀
 
-Cleiton Leite Junior
+1. Faça um **fork** do projeto
+2. Crie uma branch:
 
-🤝 Contribuindo
-Contribuições são bem-vindas!
-Para contribuir:
+```bash
+git checkout -b feature/minha-feature
+```
 
-Faça um fork do projeto.
-Crie uma branch: git checkout -b feature/minha-feature.
-Faça o commit das mudanças: git commit -m "feat: adiciona minha feature".
-Faça o push: git push origin feature/minha-feature.
-Abra um Pull Request.
+3. Commit suas alterações:
 
+```bash
+git commit -m "feat: adiciona minha feature"
+```
 
-📄 Licença
-Este projeto pode ser utilizado livremente para fins educacionais.
-Se desejar, adicione uma licença formal (ex.: MIT, Apache 2.0) neste repositório.
+4. Envie para o repositório remoto:
+
+```bash
+git push origin feature/minha-feature
+```
+
+5. Abra um **Pull Request**
+
+---
+
+## 📄 Licença
+
+Projeto livre para uso educacional.
+
+Caso deseje, adicione uma licença formal como **MIT** ou **Apache 2.0**.
